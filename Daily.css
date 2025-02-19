@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: "Quicksand", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.03);
+}
+
+.Task-Inputs {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    margin-top: 50px;
+}
+
+.inputs {
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: transform 0.3s cubic-bezier(0.21, 0.17, 0.29, 0.99), box-shadow 0.3s cubic-bezier(0.37, 0.03, 0.48, 1);
+}
+
+.inputs:hover {
+    transform: scale(1.2);
+}
+
+#addTask-btn {
+    width: 10%;
+    border-radius: 6px;
+    height: 5%;
+    font-size: 20px;
+    transition: transform 0.3s cubic-bezier(0.21, 0.17, 0.29, 0.99), box-shadow 0.3s cubic-bezier(0.37, 0.03, 0.48, 1);
+}
+
+#addTask-btn:hover {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    transform: scale(1.2);
+    font-size: 21px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Task-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #f8f9fa; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Task-table thead {
+    background: linear-gradient(to right, #4facfe, #00f2fe); 
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+
+.Task-table th, .Task-table td {
+    padding: 12px 16px;
+}
+
+.Task-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.Task-table tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.Task-table tbody tr:hover {
+    background: rgba(0, 242, 254, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+.Task-table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #00f2fe;
+    cursor: pointer;
+}
+
+.Task-table th {
+    font-weight: bold;
+}
+
+#TaskList tr {
+    transition: all 0.3s ease;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer:hover {
+    background: #00f2fe;
+    transform: scale(1.02);
+}
+
+.brand {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.year {
+    font-style: italic;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+    .Task-Inputs {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .inputs {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #addTask-btn {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .Task-table {
+        width: 90%;
+        max-width: none;
+    }
+
+    .Task-table th, .Task-table td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .Task-Inputs {
+        gap: 15px;
+    }
+
+    .inputs {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #addTask-btn {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .Task-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .Task-table th, .Task-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+#new-Date {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    color: #4facfe;
+    background: rgba(0, 242, 254, 0.1);
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#new-Date:hover {
+    background: rgba(0, 242, 254, 0.2);
+    transform: translateX(-50%) scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+    #new-Date {
+        font-size: 17px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #new-Date {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #new-Date {
+        font-size: 14px;
+        padding: 4px 8px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}

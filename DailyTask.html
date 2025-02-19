@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task's</title>
+    <link rel="stylesheet" href="Daily.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">Daily to-do's</h1>
+        <span id="new-Date"></span>
+    </header>
+
+    <main>
+        <div class="Task-Inputs">
+            <input type="text" id="main-task" class="inputs" placeholder="Enter the Task">
+            <input type="time" id="main-time" class="inputs">
+            <button id="addTask-btn" onclick="AddTask()">Add Task</button>
+        </div>
+
+        <table class="Task-table">
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>Task</th>
+                    <th>Time</th>
+                </tr>
+
+            <tbody id="TaskList">
+
+            </tbody>
+            </thead>
+        </table>
+    </main>
+
+    <footer class="footer">
+        &copy; All rights reserved | <span class="brand">tNinJA</span> <span class="year">2025</span>
+    </footer>
+    <script src="Daily.js"></script>
+</body>
+
+</html>
