@@ -1,12 +1,19 @@
-- 👋 Hi, I’m @TNInjas aka Tanay soni
-- 👀 I’m interested in Full stack devlopment
-- 🌱 I’m currently learning Full stack from Sigma Web Development course 
-- 💞️ I’m looking to collaborate on Github
-- 📫 How to reach me by sending an email at tanishksoni438@gmail.com
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+Hi, I'm Tanay 🚀
+Entrepreneur | Full-Stack Developer | AI Specialist
 
-<!---
-TNInjas/TNInjas is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I build AI-native applications with a focus on logic, scalability, and aesthetic UI. Currently, I'm focused on developing ecosystem-driven tools at Starspire.ai.
+
+🔭 Current Project: Building Habito – an AI-powered habit tracker.
+
+📝 Writing: I share deep-dives into Python and Data Science on The Programming Guy.
+
+⚡ Philosophy: Logic > Rote Memorization.
+
+🛠️ Tech Stack
+Languages: Python (Primary), JavaScript
+
+Backend: Flask, FastAPI
+
+Data Science: Pandas, NumPy, Matplotlib, Seaborn
+
+AI: Prompt Engineering, LLM Orchestration
